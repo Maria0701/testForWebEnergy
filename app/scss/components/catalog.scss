@@ -1,0 +1,40 @@
+.catalog {
+    display: flex;
+    flex-wrap: wrap;    
+    padding-top: 10px;
+    padding-bottom: 200px;
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        margin-bottom: 5px;
+    }
+
+    &__item { 
+        flex-basis: calc(100% / 3 - 9px);
+        margin-bottom: 20px;
+        
+        &:nth-child(3n+1) {
+            margin-right: 13px;
+        }
+
+        &:nth-child(2n) {
+            margin-right: 13px;
+        }
+    } 
+    
+    &__pages {
+        flex-basis: 100%;
+        align-self: center;
+        margin-bottom: 63px;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 22px;
+        letter-spacing: 0.2px;
+        border-top: 1px solid $menu-background;
+    }
+}

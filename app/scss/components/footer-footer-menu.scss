@@ -1,0 +1,19 @@
+.footer-menu {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &__link {
+        color: $background;
+        font-size: 14px;
+        line-height: 27px;
+        text-decoration-color: #b3b3b3;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.logo {
+    display: block;
+    
+    &:hover, 
+    &:focus {
+        opacity: 0.8;    
+    }
+
+    &__img {
+        display: block;
+    }
+}

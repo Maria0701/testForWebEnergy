@@ -1,0 +1,51 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    line-height: 1;
+
+    &__phone {
+        color: $text-color;
+        font-family: 'Open Sans Condensed', 'Arial', sans-serif;
+        font-size: 40px;
+        line-height: 46px;
+        letter-spacing: 1px; 
+        text-decoration: none;
+        transition: opacity 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+        }
+    }
+
+    &__feedback {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        padding: 0;
+        color: $text-color;
+        font-family: 'PT Sans', 'Arial', sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            outline: 0;
+            opacity: 0.9;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            border-bottom: 1px dashed $text-color;
+        }
+    }
+}

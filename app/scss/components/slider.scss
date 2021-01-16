@@ -1,0 +1,76 @@
+@keyframes animation-slides {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:50%;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.slider {
+    overflow: hidden;
+    background-color: $img-background;
+
+    &__wrapper {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        flex-basis: 100%;
+        flex-shrink: 0;
+        padding-top: percentage(400/1390);
+        width: 100%;
+
+        &--active {
+            animation-name: animation-slides;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-delay: 0;
+        }        
+    }
+
+    &__img {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__controls {
+        @include container;
+        position: absolute;        
+        top: 47%;
+        left: 50%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        transform: translate(-50%, -50%);        
+    }
+
+    &__control {
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            outline: 0;
+            opacity: 0.5;
+        }
+
+        &--right {
+            margin-right: 27px;
+        }
+    }
+}

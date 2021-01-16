@@ -1,0 +1,28 @@
+<div class="popup">
+    <button class="popup__close" aria-label="close form">
+        <span class="popup__cross"></span>
+    </button>
+    <div class="popup__name">Обратная связь</div>
+    <form class="form" action="handler.php"  method="post" id="signup">
+        <label class="form__label">
+            <span class="form__label-name form__label-name--req">Ваше имя *</span>
+            <input type="text" class="form__input" name="name" vlaue="" required>
+            <span class="form__error"></span>
+        </label>
+        <label class="form__label">
+            <span class="form__label-name form__label-name--req">Телефон *</span>
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" vlaue="" placeholder="ххх-ххх-хххх" class="form__input" required>
+            <span class="form__error"></span>
+        </label>
+        <label class="form__label">
+            <span class="form__label-name form__label-name--req">Email *</span>
+            <input type="email" class="form__input" name="email" vlaue=""  required>
+            <span class="form__error"></span>
+        </label>
+        <label class="form__label">
+            <span class="form__label-name form__label-name--req">Сообщение</span>
+            <textarea type="text" class="form__textarea" name="name" rows="6" cols="10"></textarea>
+        </label>
+        <input type="submit" class="form__submit">
+    </form>
+</div>

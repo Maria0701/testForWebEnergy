@@ -1,0 +1,21 @@
+.header {
+    background-color: $header-background;
+    
+    &__wrapper {
+        @include container;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding-top: 35px;
+        padding-bottom: 63px;
+    }
+
+    &__logo {        
+        width: 274px;
+        height: 101px;    
+    }
+
+    &__contacts {
+        margin-left: auto;
+    }
+}

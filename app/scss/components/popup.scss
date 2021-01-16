@@ -1,0 +1,85 @@
+@keyframes popup-fade {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:50%;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    background-color: $background;
+    display: none;
+    flex-direction: column;
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    transform: translate3d(-47%, -50%, 0);
+
+    &__close {
+        position: absolute;
+        top: -29px;
+        right: -29px;
+        border: 0;
+        width: 29px;
+        height: 29px;
+        padding: 0;
+        color: $background;
+        background-color: $menu-background;
+    }
+
+    &__cross {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 2px;
+            width: 23px;
+            height: 1px;
+            transform: rotate(45deg);
+            background-color: $background;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            right: 2px;
+            width: 23px;
+            height: 1px;
+            transform: rotate(-45deg);
+            background-color: $background;
+        }
+    }
+    
+    &--active {
+        display: block;
+        animation-name: popup-fade;
+        animation-duration: 0.3s;
+        animation-timing-function:  linear;
+        animation-delay: 0;
+    }
+
+    &__name {
+        margin-bottom: 25px;
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+}

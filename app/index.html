@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Название сайта</title>
+    <link rel="stylesheet" href="css/style.min.css" >
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <include src="app/html/header.html"></include>
+    <include src="app/html/main-menu.html"></include>
+    <main>
+        <include src="app/html/slider.html"></include>
+        <div class="container">
+          <include src="app/html/breadcrumbs.html"></include>          
+          <include src="app/html/rightblock.html"></include>
+          <include src="app/html/leftblock.html"></include>
+        </div>
+    </main>
+    <include src="app/html/footer.html"></include>
+    <include src="app/html/popup.html"></include>
+    <div class="overlay"></div>
+      <script src="js/index.js"></script>
+  </body>
+</html>

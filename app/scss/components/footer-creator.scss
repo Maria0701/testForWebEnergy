@@ -1,0 +1,29 @@
+.creator {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 7px;
+    padding-right: 22px;
+
+    &__img {
+        width: 35px;
+        height: 38px;
+        margin-right: 10px;
+    }
+
+    &__text {
+        line-height: 1;
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: 8px;
+        color: $background;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+        }
+    }
+
+}

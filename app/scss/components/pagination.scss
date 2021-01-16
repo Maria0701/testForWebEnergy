@@ -1,0 +1,30 @@
+.pages {
+    list-style: none;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 0;
+
+    &__link {
+        display: block;
+        padding-left: 11px;
+        padding-right: 10px;
+        color: $text-color;
+        font-size: 12px;
+        line-height: 22px;
+        text-decoration: none;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.2);
+        }
+    }
+
+    &__item--active &__link {
+        font-size: 15px;
+        color: #444444;
+    }
+}
